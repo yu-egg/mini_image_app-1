@@ -17,10 +17,11 @@ if (document.URL.match( /new/, /edit/)) {
 
     document.getElementById('message_image').addEventListener('change', function(e){
       // 画像が表示されている場合のみ、すでに存在している画像を削除する
-      const imageContent = document.querySelector('img');
-      if (imageContent){
-        imageContent.remove();
-      };
+      // const imageContent = document.querySelector('img');
+      // if (imageContent){
+      //   imageContent.remove();
+      // };
+      // 後から追加実装するfurima-29297では必要な記述
 
       const file = e.target.files[0];
       const blob = window.URL.createObjectURL(file);
