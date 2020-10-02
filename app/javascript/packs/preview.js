@@ -10,6 +10,9 @@ if (document.URL.match( /new/, /edit/)) {
       const blobImage = document.createElement('img')
       blobImage.setAttribute('src', blob)
 
+      // ファイル選択ボタンを生成
+      const inputHTML = document.createElement('input')
+
       // 生成したHTMLの要素をブラウザに表示させる
       imageElement.appendChild(blobImage)
       ImageList.appendChild(imageElement)
