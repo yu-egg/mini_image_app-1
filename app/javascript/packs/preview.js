@@ -10,5 +10,11 @@ document.addEventListener('DOMContentLoaded', function(){
     // 表示する画像を生成
     const blobImage = document.createElement('img');
     blobImage.setAttribute('src', blob);
+
+    //appendChildは、指定した親要素の中に要素を追加するメソッドです。
+    //親要素.appendChild(追加する子要素);
+    // 生成したHTMLの要素をブラウザに表示させる
+    imageElement.appendChild(blobImage);
+    ImageList.appendChild(imageElement);
   });
 });
