@@ -5,6 +5,7 @@ if (document.URL.match( /new/ ) || document.URL.match( /edit/ )) {
     document.getElementById('message_image').addEventListener('change', function(e){
       // 画像が表示されている場合のみ、すでに存在している画像を削除する
       const imageContent = document.querySelector('img');
+      //if文を使用して、画像が表示されている場合には、そのimg要素をremoveします。
       if (imageContent){
         imageContent.remove();
       }
