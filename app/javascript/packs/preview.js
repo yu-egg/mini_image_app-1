@@ -12,6 +12,10 @@ if (document.URL.match( /new/, /edit/)) {
 
       // ファイル選択ボタンを生成
       const inputHTML = document.createElement('input')
+      inputHTML.setAttribute('id', `message_image_${imageElementNum}`)
+      inputHTML.setAttribute('name', 'message[images][]')
+      inputHTML.setAttribute('type', 'file')
+      //=<input id="message_image_[番号]" name="message[images][]" type="file">というHTMLの要素を生成することができます。
 
       // 生成したHTMLの要素をブラウザに表示させる
       imageElement.appendChild(blobImage)
